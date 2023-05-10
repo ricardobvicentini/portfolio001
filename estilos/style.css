@@ -44,7 +44,7 @@ header {
     transition: .2s;
 }
 
-#navbar > a:hover, a#active {
+#navbar > a:hover {
     color: #037baa;
 }
 
@@ -184,11 +184,94 @@ img {
 #projects {
     width: 100vw;
     background-color: #037baa;
+    padding-bottom: 20px;
 }
 
 #projects > h2 {
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
-    padding: 20px;
+    padding: 20px 0 40px;
+}
+
+.project-table {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.product-wrap, .survey-wrap {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    color: #037baa;
+}
+
+#contact {
+    padding: 100px 0 100px;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.contact-title > h1 {
+    font-size: 3em;
+    padding: 10px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.contact-content > ul {
+    list-style: none;
+    font-size: 1.2em;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-content > ul > li > i {
+    margin-right: 5px;
+}
+
+.mail {
+    color: white;
+}
+
+.mail:hover {
+    color: #037baa;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    font-size: 1.2em;
+    border-top: 4px solid #037baa;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #037baa;
 }

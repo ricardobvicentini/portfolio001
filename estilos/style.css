@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(3px);
     z-index: 100;
 }
 
@@ -58,14 +59,14 @@ header {
 
 .image {
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 15%;
     z-index: -1;
 }
 
 img {
     max-width: 400px;
-    opacity: .3;
+    opacity: .6;
 }
 
 .sec-content {
@@ -178,4 +179,16 @@ img {
 
 .sci > a:hover {
     color: #05121b;
+}
+
+#projects {
+    width: 100vw;
+    background-color: #037baa;
+}
+
+#projects > h2 {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    padding: 20px;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form Test</title>
+  <link rel="stylesheet" href="estilos/survey.css">
+<head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is my shot at a survey form</p>
+  <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+    <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="insert name here" required/></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="insert email here" required/></label>
+      <label id="number-label" for="number">Age: <input id="number" type="number" min="10" max="100" placeholder="(years)" required/></label>
+    </fieldset>
+    <fieldset>
+      <p>Do you like studying with freeCodeCamp?</p>
+      <label class="radio"><input type="radio" name="account-type" value="radio"/> Yes</label>
+      <label class="radio"><input type="radio" name="account-type" value="radio"/> No</label>
+    </fieldset>
+    <fieldset>
+      <p>Which of the following languages are you studying?</p>
+      <div class="wrap">
+        <select id="dropdown">
+          <option value="">select one</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JS</option>
+          <option value="4">Other</option>  
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <label class="t-c" for="terms-conditions">
+        <input id="terms-conditions" type="checkbox"value="checkbox" required/> I accept the terms and conditions</label>
+      <label class="ads" for="ads">
+        <input id="ads" type="checkbox"value="checkbox" required/> I want to receive ads</label>
+    </fieldset>
+    <fieldset>
+      <label class="comment" for="comments">Comments:
+        <textarea id="comments" name="comments" rows="3" cols="30"></textarea>
+      </label>
+    </fieldset>
+      <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>

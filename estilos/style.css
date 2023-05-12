@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+/*Typical Device Breakpoints
+----------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -50,30 +59,35 @@ header {
 
 #welcome-section {
     position: relative;
-    justify-content: flex-end;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
     height: 100vh;
     padding: 0 10%;
 }
 
 .image {
+    display: flex;
     position: absolute;
     top: 10%;
-    left: 15%;
+    left: 5%;
     z-index: -1;
 }
 
 img {
-    max-width: 400px;
-    opacity: .6;
+    position: relative;
+    left: 50%;
+    max-width: 50%;
+    opacity: .4;
+    transform: translate(-50%);
 }
 
 .sec-content {
     position: absolute;
     right: 5%;
     max-width: 600px;
-    margin: 15px;
+    margin-left: 20px;
 }
 
 .sec-content > h1 {
@@ -88,6 +102,7 @@ img {
 
 .sec-content > p {
     font-size: 1.2em;
+    text-align: justify;
     margin: 20px 0 40px 0;
 }
 
@@ -179,9 +194,11 @@ img {
 
 .sci > a:hover {
     color: #05121b;
+    transform: scale(1.2);
 }
 
 #projects {
+    margin-top: 130px;
     width: 100vw;
     background-color: #037baa;
     padding-bottom: 20px;
@@ -198,11 +215,12 @@ img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .product-wrap, .survey-wrap {
     background-color: white;
+    margin: 15px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -226,6 +244,7 @@ img {
 }
 
 .contact-title > h1 {
+    text-align: center;
     font-size: 3em;
     padding: 10px;
 }
@@ -261,9 +280,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     height: 100px;
     font-size: 1.2em;
     border-top: 4px solid #037baa;
+    margin: 20px;;
 }
 
 footer a {
@@ -274,4 +295,45 @@ footer a {
 
 footer a:hover {
     color: #037baa;
+}
+
+@media screen and (max-width: 1250px) {
+
+    img {
+    position: relative;
+    left: 50%;
+    max-width: 50%;
+    opacity: .2;
+    transition: all .3s;
+    transform: translate(-50%);
+}
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .logo {
+    font-size: 1.2em;
+    transition: all .5s;
+}
+
+#navbar > a {
+    font-size: 1em;
+    transition: all .5s;
+}
+    
+}
+
+@media screen and (max-width: 439px) {
+
+    .logo {
+    font-size: 1em;
+    transition: all .5s;
+}
+
+#navbar > a {
+    font-size: .8em;
+    transition: all .5s;
+}
+    
 }

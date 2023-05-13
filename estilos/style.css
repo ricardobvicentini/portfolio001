@@ -337,3 +337,17 @@ footer a:hover {
 }
     
 }
+
+@media screen and (max-width: 382px) {
+
+    .logo {
+    font-size: .8em;
+    transition: all .3s;
+}
+
+    #navbar > a {
+    font-size: .6em;
+    transition: all .3s;
+}
+    
+}

@@ -314,26 +314,26 @@ footer a:hover {
 
     .logo {
     font-size: 1.2em;
-    transition: all .5s;
+    transition: all .3s;
 }
 
-#navbar > a {
+    #navbar > a {
     font-size: 1em;
-    transition: all .5s;
+    transition: all .3s;
 }
     
 }
 
-@media screen and (max-width: 439px) {
+@media screen and (max-width: 460px) {
 
     .logo {
     font-size: 1em;
-    transition: all .5s;
+    transition: all .3s;
 }
 
-#navbar > a {
+    #navbar > a {
     font-size: .8em;
-    transition: all .5s;
+    transition: all .3s;
 }
     
 }

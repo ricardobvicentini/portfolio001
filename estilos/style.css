@@ -70,17 +70,19 @@ header {
 .image {
     display: flex;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 5%;
     z-index: -1;
+    transition: all .3s ease-in-out;
 }
 
 img {
+    max-width: 70%;
+    height: auto;
     position: relative;
-    left: 50%;
-    max-width: 50%;
+    left: 15%;
     opacity: .4;
-    transform: translate(-50%);
+
 }
 
 .sec-content {
@@ -297,15 +299,10 @@ footer a:hover {
     color: #037baa;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
 
     img {
-    position: relative;
-    left: 50%;
-    max-width: 50%;
     opacity: .2;
-    transition: all .3s;
-    transform: translate(-50%);
 }
 
 }

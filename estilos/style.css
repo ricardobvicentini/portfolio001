@@ -79,6 +79,7 @@ header {
 img {
     max-width: 70%;
     height: auto;
+    min-width: 500px;
     position: relative;
     left: 15%;
     opacity: .4;
@@ -200,8 +201,9 @@ img {
 }
 
 #projects {
+    border: 1px solid red;
     margin-top: 130px;
-    width: 100vw;
+    width: 100%;
     background-color: #037baa;
     padding-bottom: 20px;
 }
@@ -222,10 +224,17 @@ img {
 
 .product-wrap, .survey-wrap {
     background-color: white;
-    margin: 15px;
     padding: 10px;
     border-radius: 5px;
 }
+
+.product-wrap img, .survey-wrap img {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
 
 .project-title {
     font-size: 1.5em;
